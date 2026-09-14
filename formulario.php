@@ -34,7 +34,7 @@ if ($id > 0 && $_SERVER['REQUEST_METHOD'] === 'GET') {
     $modelo = $trem['modelo_trem'];
     $ano_fabricacao = $trem['ano_fabricacao'];
     $capacidade_toneladas = $trem['capacidade_toneladas'];
-    $situacao = $trem['situacao'];
+    $situacao = $trem['situacao_trem'];
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -107,7 +107,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <header>
-        <h1>Frota Ferroviária</h1>
+        <span class="marca">Frota Ferroviária</span>
+        <nav>
+            <a href="index.php">Trens</a>
+            <a href="painel.php">Painel</a>
+            <a href="leituras.php">Leituras</a>
+            <a href="simulador.php">Simulador</a>
+        </nav>
     </header>
 
     <main>
